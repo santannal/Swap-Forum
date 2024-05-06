@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Permutação</title>
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg shadow">
+        <div class="container-fluid container-space">
+            <a class="navbar-brand fs-2" style="margin-left: 5rem;" href="#">Matemática <span
+                    class="text-danger">Fatec</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse itens-nav" id="navbarNavDropdown">
+                <ul class="navbar-nav fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#permutacaosimples">Permutação simples</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#repeticao">Permutação com repetição</a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="background"></div>
+
+    <div class="container-xl content-container p-4 shadow-lg">
+        <div class="content">
+            <div class="title-content fs-1 mb-3">
+
+                <!--INTRODUÇÃO-->
+                O QUE É <span class="text-danger"><b>PERMUTAÇÃO?</b></span>
+            </div>
+            <p class="fs-4 mt-1">Permutação é um conceito matemático que envolve a <b>organização de elementos em um
+                    conjunto de
+                    maneiras específicas.</b> Imagine que você tem um conjunto de objetos, como letras ou números, e
+                deseja
+                rearranjá-los em diferentes ordens. Essas diferentes ordens são chamadas de permutações. <br> </p>
+
+            <p class="fs-4 mt-1">Por exemplo, considere as letras "A", "B" e "C". As permutações dessas letras seriam
+                "ABC",
+                "ACB",
+                "BAC", "BCA", "CAB" e "CBA". Cada uma dessas combinações representa uma permutação única. <br> </p>
+
+            <p class="fs-4 mt-1">O número total de permutações possíveis para um conjunto de
+                n elementos pode ser calculado usando a <b>fórmula
+
+                    n!</b>, onde n! representa o produto de todos os números inteiros de 1 até n.</p>
+
+            <p class="fs-4 mt-1">Caso queira utilizar a calculadora, clique <a href="paginas/pSimples.html">aqui!</a>
+            </p>
+            <br>
+
+
+            <!--EXEMPLOS-->
+            <div class="title-content fs-1 mb-3">
+                <span class="text-danger"><b>EXE</b></span>MPLOS
+            </div>
+            <p class="fs-4 mt-1">As <b>permutações</b> são úteis em uma <b>variedade de situações.</b> Elas são
+                amplamente
+                utilizadas
+                em combinatória, probabilidade, estatística e ciência da computação. <b>Por exemplo</b>, ao calcular as
+                possíveis combinações de uma senha, ao embaralhar cartas em um jogo de cartas, ou ao analisar as
+                diferentes maneiras de organizar elementos em um conjunto, as permutações desempenham um papel
+                fundamental. <br> </p>
+
+            <p class="fs-4 mt-1">Além disso, as permutações <b>podem ser restritas</b> por certas condições. Por
+                exemplo, em
+                casos onde há elementos repetidos, utiliza-se a fórmula de <b>permutação com repetição</b>. E em
+                situações
+                onde apenas um subconjunto dos elementos é considerado, calcula-se permutações parciais. <br>
+            </p>
+
+            <!--PERMUTAÇÃO SIMPLES-->
+            <div class="title-content fs-1 mb-3" id="permutacaosimples">
+                PERMUTAÇÃO <span class="text-danger"><b>SIMPLES</b></span>
+            </div>
+            <p class="fs-4 mt-1">Uma <b>permutação simples</b> envolve a organização de elementos distintos em um
+                conjunto, <b>sem
+                    repetição.</b> Isso significa que cada <b>elemento é único</b> e aparece apenas uma vez em cada
+                arranjo.
+                Por
+                exemplo, se tivermos um conjunto de três letras, como "A", "B" e "C", as permutações simples seriam
+                arranjos como "ABC", "ACB", "BAC", "BCA", "CAB" e "CBA". Cada uma dessas combinações representa uma
+                permutação única. <br> </p>
+
+            <p class="fs-4 mt-1">O número total de permutações possíveis para um conjunto de
+                n elementos pode ser calculado usando a fórmula
+                n!, onde n! representa o produto de todos os números inteiros de 1 até
+                n. Por exemplo, para um conjunto de 3 elementos como as letras "A", "B" e "C", o número <b>total</b> de
+                permutações seria:<br>
+            </p>
+
+            <div class="title-content fs-1 mb-5" style="text-align: center;">
+                3! = 3 X 2 X 1 <span class="text-danger"><b>=</b></span> 6.
+            </div>
+
+            <p class="fs-4 mt-1">Caso queira utilizar a calculadora, clique <a href="paginas/pSimples.html">aqui!</a>
+            </p>
+
+
+            <!--REPETIÇÃO-->
+
+            <div class="title-content fs-1 mb-3" id="repeticao">
+                PERMUTAÇÃO COM <span class="text-danger"><b>REPETIÇÃO</b></span>
+            </div>
+            <p class="fs-4 mt-1">Uma <b>permutação com repetição</b> ocorre quando há elementos repetidos no conjunto
+                que está sendo
+                permutado. Isso significa que alguns elementos são idênticos e, portanto, podem ser trocados sem alterar
+                o resultado geral. Por exemplo, se tivermos o conjunto {<b>A</b>, <b>A</b>, <b>B</b>}, as permutações
+                com repetição incluiriam arranjos como "<b>AAB</b>", "<b>ABA</b>" e "<b>BAA</b>".</p>
+
+            <p class="fs-4 mt-1">Para calcular o número total de permutações com repetição, utilizamos uma fórmula
+                modificada. Suponha que
+                temos um conjunto de <b>n</b> elementos, onde <b>n<sub>1</sub>, n<sub>2</sub>, ..., n<sub>k</sub></b>
+                representam o número de repetições de cada elemento. A fórmula é dada por:</p>
+
+            <img src="imagem/formula.PNG" class="image-formula rounded mx-auto d-block" alt="Fórmula">
+
+            <p class="fs-4 mt-2">Essa fórmula ajusta o número total de permutações pela presença de elementos repetidos,
+                garantindo que
+                não contemos permutações idênticas mais de uma vez.</p>
+
+            <p class="fs-4 mt-1">Caso queira utilizar a calculadora, clique: <a href="paginas/pComposta.html">aqui!</a>
+            </p>
+
+            <div class="title-content fs-1 mb-3 mt-5">
+                Obrigado pela <span class="text-danger"><b>atenção!</b></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="animacao.js"></script>
+
+</html>

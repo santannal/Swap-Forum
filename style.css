@@ -1,0 +1,39 @@
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(imagem/background.jpg);
+    z-index: -1;
+}
+
+
+.navbar {
+    padding: 5px;
+    background-color: #ffff;
+}
+
+.navbar-nav {
+    width: 68vw;
+    justify-content: end;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-item {
+    padding: 15px;
+}
+
+.content-container {
+    background-color: white;
+    margin-top: 7rem;
+    height: auto;
+    border-radius: 8px;
+}
+
+.title-content {
+    margin-top: 2rem;
+}
