@@ -1,0 +1,69 @@
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(40deg, #8B0000, red, #fff, blue, purple);
+    background-size: 400% 400%;
+    animation: gradientBackground 10s ease infinite;
+    z-index: -1;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.navbar {
+    padding: 5px;
+    background-color: #ffff;
+}
+
+.navbar-nav {
+    width: 68vw;
+    justify-content: end;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-item {
+    padding: 15px;
+}
+
+.content-container {
+    margin-top: 6rem;
+    width: 800px;
+    border-radius: 10px;
+    height: auto;
+}
+
+.content {
+    margin-bottom: 20px;
+}
+
+.form-control:focus {
+    margin: 0;
+}
+
+.lbl-result {
+    border-radius: 10px;
+}
+
+.new-inputs {
+    width: 90%;
+    margin: 0;
+    margin-left: 5rem;
+    justify-content: space-around;
+}

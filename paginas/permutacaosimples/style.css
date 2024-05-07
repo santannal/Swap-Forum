@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(40deg, #000, gray, #940533, #c0012a, #f5061d);
+    background: linear-gradient(40deg, #8B0000, red, #fff, blue, purple);
     background-size: 400% 400%;
     animation: gradientBackground 10s ease infinite;
     z-index: -1;
@@ -30,9 +30,8 @@
 }
 
 .navbar-nav {
-    width: 50vw;
-    justify-content: space-around;
-    margin-left: 20rem;
+    width: 68vw;
+    justify-content: end;
 }
 
 .nav-link:hover {
@@ -41,4 +40,23 @@
 
 .nav-item {
     padding: 15px;
+}
+
+.content-container {
+    margin-top: 6rem;
+    width: 800px;
+    border-radius: 10px;
+    height: auto;
+}
+
+.content {
+    margin-bottom: 20px;
+}
+
+.form-control:focus {
+    margin: 0;
+}
+
+.lbl-result {
+    border-radius: 10px;
 }
