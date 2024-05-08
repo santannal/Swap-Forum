@@ -14,7 +14,7 @@
 <header>
     <nav class="navbar navbar-expand-lg shadow">
         <div class="container-fluid container-space">
-            <a class="navbar-brand fs-2" style="margin-left: 5rem;" href="#">Matemática<span
+            <a class="navbar-brand fs-2" style="margin-left: 5rem;" href="#">Matemática <span
                     class="text-danger">Fatec</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,6 +42,7 @@
             PERMUTAÇÃO COM REPETIÇÃO
         </div>
         <div class="content">
+            <!--
             <div class="btns d-flex">
                 <div class="more-button mt-2 mb-0">
                     <a class="btn btn-primary" href="#" role="button" id="btnmore">+</a>
@@ -51,20 +52,28 @@
                     <a class="btn btn-danger" href="#" role="button" id="btnmenos">-</a>
                     <p style="opacity: 50%;">Exc.</p>
                 </div>
-            </div>
+            </div> -->
             <input id="input" class="form-control form-control-lg" placeholder="Insira um número ou uma palavra..."
                 aria-label=".form-control-lg example">
-            <div class="new-inputs d-block mt-5 p-1" id="novoitem">
+            <!-- <div class="new-inputs d-block mt-5 p-1" id="novoitem">
                 <div class="col">
-                    <!--NOVO ELEMENTO AQUI-->
+                        NOVO ELEMENTO AQUI
                 </div>
-            </div>
+            </div> -->
             <div class="d-grid gap-2">
                 <button id="calcular" class="btn btn-outline-primary mt-5 mb-5" type="button">CALCULAR</button>
             </div>
             <div class="container-sm lbl-result bg-info p-1 shadow-lg text-light">
                 <div id="resultado" class="fs-4" style="text-align: center;"></div>
             </div>
+            <div class="mt-4 p-1" style="text-align: center; opacity: 50%; font-size: 15px;">Observação: Caso seja
+                inserido
+                um número
+                negativo,
+                ele
+                será lido como uma palavra, já que
+                valores não
+                positivos normalmente não são aceitos nestes problemas.</div>
         </div>
     </div>
 </body>

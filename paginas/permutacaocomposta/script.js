@@ -69,4 +69,3 @@ document.getElementById('btnmenos').addEventListener('click', function () {
     const ultimoInput = inputs[inputs.length - 1];
     elementoPai.removeChild(ultimoInput);
 })
-
