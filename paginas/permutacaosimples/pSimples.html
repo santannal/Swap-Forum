@@ -22,12 +22,24 @@
             <div class="collapse navbar-collapse itens-nav" id="navbarNavDropdown">
                 <ul class="navbar-nav fs-5">
                     <li class="nav-item">
-                        <a class="nav-link" href="/./index.html">Home</a>
+                        <a class="nav-link" href="/index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/paginas/permutacaocomposta/pComposta.html">Permutação composta</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Análise combinatória
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Permutação
+                                    simples</a></li>
+                            <li><a class="dropdown-item" href="#">Permutação
+                                    composta</a></li>
+                            <li><a class="dropdown-item" href="/paginas/combinacao/pComposta.html">Arranjo simples
+                                </a></li>
+                            <li><a class="dropdown-item" href="/paginas/combinacao/pComposta.html">Combinação
+                                    simples</a></li>
+                        </ul>
                     </li>
-                </ul>
             </div>
         </div>
     </nav>
@@ -38,7 +50,7 @@
     </div>
     <div class="container-fluid content-container p-4 shadow-lg bg-light">
         <div class="calc-title fs-1 mb-4" style="text-align: center;">
-            PERMUTAÇÃO SIMPLES
+            PERMUTAÇÃO
         </div>
         <div class="content">
             <input id="input" class="form-control form-control-lg" placeholder="Insira um número ou uma palavra..."

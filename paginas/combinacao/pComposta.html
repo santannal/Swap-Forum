@@ -25,11 +25,22 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/paginas/permutacaosimples/pSimples.html">Permutação simples
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Análise combinatória
                         </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/paginas/permutacaosimples/pSimples.html">Permutação
+                                    simples</a></li>
+                            <li><a class="dropdown-item" href="/paginas/permutacaosimples/pSimples.html">Permutação
+                                    composta</a></li>
+                            <li><a class="dropdown-item" href="#">Arranjo simples
+                                </a></li>
+                            <li><a class="dropdown-item" href="#">Combinação
+                                    simples</a></li>
+                        </ul>
                     </li>
-
             </div>
         </div>
     </nav>
@@ -39,7 +50,7 @@
     <div class="background"></div>
     <div class="container-fluid content-container p-4 shadow-lg bg-light" id="conteudo">
         <div class="calc-title fs-1 mb-4" style="text-align: center;">
-            PERMUTAÇÃO COM REPETIÇÃO
+            COMBINAÇÃO E ARRANJO
         </div>
         <div class="content">
             <!--
@@ -53,13 +64,34 @@
                     <p style="opacity: 50%;">Exc.</p>
                 </div>
             </div> -->
-            <input id="input" class="form-control form-control-lg" placeholder="Insira um número ou uma palavra..."
+            <input id="input" class="form-control form-control-lg" placeholder="Insira o valor de 'n'"
+                aria-label=".form-control-lg example">
+            <br>
+            <input id="inputk" class="form-control form-control-lg" placeholder="Insira o valor de 'k'"
                 aria-label=".form-control-lg example">
             <!-- <div class="new-inputs d-block mt-5 p-1" id="novoitem">
                 <div class="col">
                         NOVO ELEMENTO AQUI
                 </div>
             </div> -->
+
+            <br>
+            <div class="radios d-flex m-1" style="justify-content: space-around;width: 500px;">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="radiocombinacao"
+                        value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Combinação simples
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="radioarranjo" value="option1"
+                        checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Arranjo simples
+                    </label>
+                </div>
+            </div>
             <div class="d-grid gap-2">
                 <button id="calcular" class="btn btn-outline-primary mt-5 mb-5" type="button">CALCULAR</button>
             </div>
@@ -71,9 +103,7 @@
                 um número
                 negativo,
                 ele
-                será lido como uma palavra, já que
-                valores não
-                positivos normalmente não são aceitos nestes problemas.</div>
+                será lido como uma palavra.</div>
         </div>
     </div>
 </body>
