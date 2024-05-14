@@ -38,11 +38,11 @@ function calcularPermutacaoComRepeticao(entrada) {
 
 document.getElementById('calcular').addEventListener('click', function () {
     var entradan = document.getElementById('input').value;
-    var entradak = document.getElementById('inputk').value;
+    var entradak = document.getElementById('inputvaluek').value;
     var isNumero = /^\d+$/.test(entradan);
 
     if (isNumero) {
-        if (entradan >= entradak) {
+        if (document.getElementById('input') >= document.getElementById('inputvaluek')) {
             if (document.getElementById("radiocombinacao").checked) {
                 var resultado = calcularPermutacao(entradan) / (calcularPermutacao(entradak) * (calcularPermutacao(entradan - entradak)));
                 document.getElementById('resultado').innerHTML = 'Combinação simples: ' + resultado.toFixed(0);
@@ -51,7 +51,7 @@ document.getElementById('calcular').addEventListener('click', function () {
                 document.getElementById('resultado').innerHTML = 'Arranjo simples: ' + resultado.toFixed(0);
             }
         } else {
-            document.getElementById('resultado').innerHTML = 'O k precisa ser menor que n';
+            document.getElementById('resultado').innerHTML = 'O k precisa ser menor ou igual n';
         }
     } else {
         document.getElementById('resultado').innerHTML = 'Utilize a calculadora de permutação';
