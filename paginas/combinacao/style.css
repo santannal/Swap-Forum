@@ -67,3 +67,20 @@
     margin-left: 5rem;
     justify-content: space-around;
 }
+
+.custom-radio {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+}
+
+.custom-radio:checked {
+    border-color: blueviolet;
+    background-color: blue;
+}
